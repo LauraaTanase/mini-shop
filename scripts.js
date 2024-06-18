@@ -84,6 +84,10 @@ cart.push({
   name:product.name,
   price:product.price
 });
+
+ // Actualizăm afișarea numărului de produse în coș
+ updateCartCount(); 
+
   // ca sa afisez actualizat - practic fac override la ce am deja in innerHTML
   renderCart();
 }
@@ -92,11 +96,17 @@ function removeFromCart(productId) {
   // filtreaza-mi tot ce e diferit ce input "productId"
   // obtin un array fara ce am pasat in input
   cart = cart.filter((item) => item.id !== productId);
-  
+
+    // Actualizăm afișarea numărului de produse în coș
+  updateCartCount()
+
   // update la datele afisate
   renderCart();
 }
-
+function updateCartCount() {
+  const cartCountElement = document.getElementById("cart-count");
+  cartCountElement.textContent = cart.length;
+}
 
   // TODO: conditioneaza un alert message daca nu ai continut
   // HINT:
