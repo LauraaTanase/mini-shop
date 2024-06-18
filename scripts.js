@@ -4,7 +4,7 @@ const products = [
   { id: 3, name: "Product 3", price: 30 },
 ];
 
-const cart = [];
+let cart = [];
 
 function renderProducts() {
   const productList = document.getElementById("product-list");
@@ -62,17 +62,28 @@ function renderCart() {
       // sa devina un string, stringul fiind cel asteptat in .innerHTML (ceva de genul: "<li>test</li><li>test</li><li>test</li>")
       .join("");
 
+//  TODO: implementeaza ce sa faca remove from cart
   document.querySelectorAll(".remove-from-cart").forEach((button) => {
-    //  TODO: implementeaza ce sa faca remove from cart
+      button.addEventListener("click", (event) => {
+    // Obținem id-ul produsului din atributul data-id al butonului
+    const productId = parseInt(event.target.getAttribute("data-id"));
+
+    // Apelăm funcția removeFromCart cu productId pentru a elimina produsul din coș
+    removeFromCart(productId);
   });
-}
+});
+  }
 
 function addToCart(productId) {
   const product = products.find((p) => p.id === productId);
 
   // TODO: "impinge" produsul in lista de cart
   // asta trebuie sa faci tu :)
-
+cart.push({
+  id:product.id,
+  name:product.name,
+  price:product.price
+});
   // ca sa afisez actualizat - practic fac override la ce am deja in innerHTML
   renderCart();
 }
@@ -86,7 +97,7 @@ function removeFromCart(productId) {
   renderCart();
 }
 
-function checkout() {
+
   // TODO: conditioneaza un alert message daca nu ai continut
   // HINT:
   // if (
@@ -95,21 +106,30 @@ function checkout() {
   //   alert("Your cart is empty!");
   //   return;
   // }
-
+  function checkout() {
+    if (cart.length === 0) {
+      alert("Your cart is empty");
+      return;
+    }
+  
   // TODO: calculeaza totalul cartului
 
+
+  const total = cart.reduce((acc, item) => acc + item.price, 0)
+
   // afiseaza mesajul
-  alert(`Your total is $${total}. Thank you for your purchase!`);
+  alert(`Your total is $${total}. Thank you for your purchase!`) 
   
   // acum ca a dat checkout si "a cumparat"
   // golim cartul pentru alte cumparaturi :)
-  cart.length = 0; // Clear the cart
+  
+  cart = [] // Clear the cart
 
   // si facem iar update
   renderCart();
 }
 
 
-document.getElementById("checkout-btn").addEventListener("click", checkout);
+document.getElementById("checkout-btn").addEventListener("click", checkout) 
 
 renderProducts();
