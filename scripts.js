@@ -7,8 +7,6 @@ const products = [
       "Bananele sunt un fruct tropical extrem de sănătos, nu numai delicios. Deoarece conțin mai mulți nutrienți esențiali, bananele oferă beneficii pentru digestie, sănătatea inimii și pierderea în greutate. Sunt o gustare convenabilă, îndrăgită atât de adulți, cât și de copii.",
     price: 10,
     stock: 15,
-    image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassets\banana.jpg",
     sku: "SK001",
   },
   {
@@ -18,8 +16,6 @@ const products = [
       "Merele sunt fructe crocante și suculente, disponibile într-o varietate de culori, inclusiv roșu, verde și galben. Sunt o sursă excelentă de fibre și vitamine, în special vitamina C.",
     price: 5.5,
     stock: 12,
-    image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsmere.jpg",
     sku: "SK002",
   },
   {
@@ -29,8 +25,6 @@ const products = [
       "Perele sunt fructe dulci și zemoase. Ele sunt bogate în fibre și antioxidanți, fiind perfecte atât pentru consumul proaspăt, cât și pentru gătit.",
     price: 11,
     stock: 55,
-    image:
-      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\pere.jpg",
     sku: "SK003",
   },
   {
@@ -40,8 +34,6 @@ const products = [
       " Fructul dragonului este un fruct exotic cu coajă roz sau galbenă și pulpă albă sau roșie, punctată cu semințe negre. Este bogat în vitamina C, fibre și antioxidanți.",
     price: 12,
     stock: 7,
-    image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassets\fructulDragonului.jpg",
     sku: "SK004",
   },
   {
@@ -51,8 +43,6 @@ const products = [
       "Piersicile sunt fructe suculente, care pot varia în culoare de la alb la galben. Sunt cunoscute pentru aroma lor dulce și conținutul ridicat de vitamine A și C.",
     price: 4.5,
     stock: 150,
-    image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetspiersici.jpg",
     sku: "SK005",
   },
   {
@@ -62,8 +52,6 @@ const products = [
       "Strugurii sunt fructe mici, suculente, care cresc în ciorchini. Disponibili în varietăți de culori precum verde, roșu și negru, strugurii sunt bogați în antioxidanți și vitamine.",
     price: 20,
     stock: 115,
-    image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsstruguri.jpg",
     sku: "SK006",
   },
   {
@@ -73,8 +61,6 @@ const products = [
       "Nectarinele sunt similare piersicilor, dar au o coajă netedă și un gust dulce-acrișor. Sunt o sursă bună de vitamine A și C și antioxidanți.",
     price: 9,
     stock: 78,
-    image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassets\nectarine.jpg",
     sku: "SK007",
   },
   {
@@ -84,8 +70,6 @@ const products = [
       " Mandarinele sunt citrice mici și dulci, cu coajă subțire și ușor de curățat. Ele sunt bogate în vitamina C și flavonoizi, fiind o gustare perfectă pentru imunitate.",
     price: 6,
     stock: 150,
-    image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsmandarine.jpg",
     sku: "SK008",
   },
   {
@@ -95,8 +79,6 @@ const products = [
       " Portocalele sunt fructe citrice mari și suculente, cunoscute pentru gustul lor dulce și acidulat. Sunt o sursă excelentă de vitamina C și fibre.",
     price: 10,
     stock: 200,
-    image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsportocale.jpg",
     sku: "SK009",
   },
   {
@@ -106,8 +88,6 @@ const products = [
       "Lime-ul este un fruct citric mic, verde, cu un gust acrișor intens. Este folosit frecvent pentru a da aromă alimentelor și băuturilor, fiind bogat în vitamina C.",
     price: 3,
     stock: 300,
-    image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetslime.jpg",
     sku: "SK0010",
   },
   {
@@ -117,8 +97,6 @@ const products = [
       "Mango-ul este un fruct tropical cu pulpă galben-portocalie, dulce și suculentă. Este bogat în vitaminele A și C, fibre și antioxidanți.",
     price: 30,
     stock: 150,
-    image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsmango.jpg",
     sku: "SK0011",
   },
   {
@@ -127,9 +105,7 @@ const products = [
     description:
       "Ananasul este un fruct tropical mare, cu o coajă aspră și pulpă dulce-acrișoară. Este o sursă excelentă de vitamina C, mangan și bromelaină, o enzimă benefică pentru digestie.",
     price: 28,
-    stock: 100,
-    image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsananas.jpg",
+    stock: 17,
     sku: "SK0012",
   },
 ];
@@ -151,15 +127,16 @@ function renderProducts() {
   <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/
 </svg>></i>
 </button>
+
                   </div>
               </div>
           </div>
       `
     )
     .join("");
-//TODO de reparat aici functia 
-    //Functie pentru adaugarea cantitatii disponibile in stoc//
-  
+  //TODO de reparat aici functia
+  //Functie pentru adaugarea cantitatii disponibile in stoc//
+
   // selectez toate elementele cu clasa "add-to-card"
   document
     .querySelectorAll(".add-to-cart")
@@ -177,6 +154,25 @@ function renderProducts() {
     });
 }
 
+//TODO creez functia de increase/decrease
+function addToCart(productId) {
+  const product = product.find((p) => p.id === productId);
+  const cartItem = cart.find((item) => item.id === productId);
+
+  if (cartItem) {
+    cartItem.quantity += 1;
+  } else {
+    cart.push({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      quantity: 1,
+    });
+  }
+  updateCartCount();
+  renderCart();
+}
+
 function renderCart() {
   // cart-list fiind un element in index.html
   const cartList = document.getElementById("cart-list");
@@ -189,8 +185,12 @@ function renderCart() {
         // plus fiecarui element ii spun cum sa arate cu niste HTML si bootstrap classes
         (item) => `
           <li class="list-group-item d-flex justify-content-between align-items-center">
-              ${item.name} - $${item.price}
+              ${item.name} - $${item.price} x ${item.quantity}
+              <div>
+              <button class="btn btn-secondary btn-sm decrease-quantity" data-id="${item.id}">-</button>
+                <button class="btn btn-secondary btn-sm increase-quantity" data-id="${item.id}">+</button>
               <button class="btn btn-danger btn-sm remove-from-cart" data-id="${item.id}">Remove</button>
+              </div>
           </li>
       `
       )
@@ -208,10 +208,62 @@ function renderCart() {
       removeFromCart(productId);
     });
   });
+
+  document.querySelectorAll(".increase-quantity").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const productId = parseInt(event.target.getAttribute("data-id"));
+      updateQuantity(productId, 1);
+    });
+  });
+
+  document.querySelectorAll(".decrease-quantity").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const productId = parseInt(event.target.getAttribute("data-id"));
+      updateQuantity(productId, -1);
+    });
+  });
+
+  document.querySelectorAll(".remove-from-cart").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const productId = parseInt(event.target.getAttribute("data-id"));
+      removeFromCart(productId);
+    });
+  });
+}
+
+function increaseQuantity(productId) {
+  const cartItem = cart.find((item) => item.id === productId);
+  if (cartItem) {
+    cartItem.quantity += 1;
+  }
+  updateCartCount();
+  renderCart();
+}
+function decreaseQuantity(productId) {
+  const cartItem = cart.find((item) => item.id === productId);
+  if (cartItem && cartItem.quantity > 1) {
+    cartItem.quantity -= 1;
+  } else {
+    removeFromCart(productId);
+  }
+  updateCartCount();
+  renderCart();
+}
+function updateCartCount() {
+  const cartCountElement = document.getElementById("cart-count");
+  const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+  cartCountElement.textContent = totalItems;
 }
 
 function addToCart(productId) {
   const product = products.find((p) => p.id === productId);
+  const cartItem = cart.find((item) => item.id === productId);
+
+  if (cartItem) {
+    cartItem.quantity += 1;
+  } else {
+    cart.push;
+  }
 
   // TODO: "impinge" produsul in lista de cart
   // asta trebuie sa faci tu :)
@@ -219,6 +271,7 @@ function addToCart(productId) {
     id: product.id,
     name: product.name,
     price: product.price,
+    quantity: 1,
   });
 
   // Actualizăm afișarea numărului de produse în coș
@@ -226,6 +279,20 @@ function addToCart(productId) {
 
   // ca sa afisez actualizat - practic fac override la ce am deja in innerHTML
   renderCart();
+}
+
+function updateQuantity(productId, change) {
+  const cartItem = cart.find((item) => item.id === productId);
+
+  if (cartItem) {
+    cartItem.quantity += change;
+    if (cartItem.quantity <= 0) {
+      removeFromCart(productId);
+    } else {
+      renderCart();
+    }
+  }
+  updateCartCount();
 }
 
 function removeFromCart(productId) {
@@ -239,10 +306,6 @@ function removeFromCart(productId) {
   // update la datele afisate
   renderCart();
 }
-function updateCartCount() {
-  const cartCountElement = document.getElementById("cart-count");
-  cartCountElement.textContent = cart.length;
-}
 
 // TODO: conditioneaza un alert message daca nu ai continut
 // HINT:
@@ -253,19 +316,6 @@ function updateCartCount() {
 //   return;
 // }
 
-
-//Functie de scroll de la my cart pana la checkout button
-document.querySelectorAll('.icon-link').forEach(anchor => {
-  anchor.addEventListener('click', function(event){
-    event.preventDefault(); // Previne comportamentul implicit al link-ului
-    //selectez elementul catre care vreau sa faca scroll
-    const checkoutBtn = document.getElementById('checkout-btn');
-
-    checkoutBtn.scrollIntoView({ behavior: 'smooth' }); 
-   });
-});
-
-
 //Functie de checkout//
 function checkout() {
   if (cart.length === 0) {
@@ -275,7 +325,9 @@ function checkout() {
 
   // TODO: calculeaza totalul cartului
 
-  const total = cart.reduce((acc, item) => acc + item.price, 0);
+  const total = cart.reduce(
+    (acc, item) => acc + item.price * item.quantity, 0
+  );
 
   // afiseaza mesajul
   alert(`Your total is $${total}. Thank you for your purchase!`);
@@ -287,8 +339,20 @@ function checkout() {
 
   // si facem iar update
   renderCart();
+  updateCartCount();
 }
 
 document.getElementById("checkout-btn").addEventListener("click", checkout);
 
 renderProducts();
+
+//Functie de scroll de la my cart pana la checkout button
+document.querySelectorAll(".icon-link").forEach((anchor) => {
+  anchor.addEventListener("click", function (event) {
+    event.preventDefault(); // Previne comportamentul implicit al link-ului
+    //selectez elementul catre care vreau sa faca scroll
+    const checkoutBtn = document.getElementById("checkout-btn");
+
+    checkoutBtn.scrollIntoView({ behavior: "smooth" });
+  });
+});
