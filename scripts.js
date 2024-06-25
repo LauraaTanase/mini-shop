@@ -35,10 +35,10 @@ const products = [
   },
   {
     id: 4,
-    name: "Fructul dragonului",
+    name: "Capsuni",
     description:
       " Fructul dragonului este un fruct exotic cu coajă roz sau galbenă și pulpă albă sau roșie, punctată cu semințe negre. Este bogat în vitamina C, fibre și antioxidanți.",
-    price: 20,
+    price: 12,
     stock: 7,
     image:
       "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassets\fructulDragonului.jpg",
