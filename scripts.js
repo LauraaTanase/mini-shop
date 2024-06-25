@@ -16,10 +16,10 @@ const products = [
     name: "Mere",
     description:
       "Merele sunt fructe crocante și suculente, disponibile într-o varietate de culori, inclusiv roșu, verde și galben. Sunt o sursă excelentă de fibre și vitamine, în special vitamina C.",
-    price: 10,
-    stock: 15,
+    price: 5.5,
+    stock: 12,
     image:
-      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\mere.jpg",
+      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsmere.jpg",
     sku: "SK002",
   },
   {
@@ -27,8 +27,8 @@ const products = [
     name: "Pere",
     description:
       "Perele sunt fructe dulci și zemoase. Ele sunt bogate în fibre și antioxidanți, fiind perfecte atât pentru consumul proaspăt, cât și pentru gătit.",
-    price: 10,
-    stock: 15,
+    price: 11,
+    stock: 55,
     image:
       "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\pere.jpg",
     sku: "SK003",
@@ -38,10 +38,10 @@ const products = [
     name: "Fructul dragonului",
     description:
       " Fructul dragonului este un fruct exotic cu coajă roz sau galbenă și pulpă albă sau roșie, punctată cu semințe negre. Este bogat în vitamina C, fibre și antioxidanți.",
-    price: 10,
-    stock: 15,
+    price: 20,
+    stock: 7,
     image:
-      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\fructulDragonului.jpg",
+      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassets\fructulDragonului.jpg",
     sku: "SK004",
   },
   {
@@ -49,10 +49,10 @@ const products = [
     name: "Piersici",
     description:
       "Piersicile sunt fructe suculente, care pot varia în culoare de la alb la galben. Sunt cunoscute pentru aroma lor dulce și conținutul ridicat de vitamine A și C.",
-    price: 10,
-    stock: 15,
+    price: 4.5,
+    stock: 150,
     image:
-      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\piersici.jpg",
+      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetspiersici.jpg",
     sku: "SK005",
   },
   {
@@ -60,10 +60,10 @@ const products = [
     name: "Struguri",
     description:
       "Strugurii sunt fructe mici, suculente, care cresc în ciorchini. Disponibili în varietăți de culori precum verde, roșu și negru, strugurii sunt bogați în antioxidanți și vitamine.",
-    price: 10,
-    stock: 15,
+    price: 20,
+    stock: 115,
     image:
-      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\struguri.jpg",
+      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsstruguri.jpg",
     sku: "SK006",
   },
   {
@@ -71,10 +71,10 @@ const products = [
     name: "Nectarine",
     description:
       "Nectarinele sunt similare piersicilor, dar au o coajă netedă și un gust dulce-acrișor. Sunt o sursă bună de vitamine A și C și antioxidanți.",
-    price: 10,
-    stock: 15,
+    price: 9,
+    stock: 78,
     image:
-      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\nectarine.jpg",
+      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassets\nectarine.jpg",
     sku: "SK007",
   },
   {
@@ -82,10 +82,10 @@ const products = [
     name: "Mandarine",
     description:
       " Mandarinele sunt citrice mici și dulci, cu coajă subțire și ușor de curățat. Ele sunt bogate în vitamina C și flavonoizi, fiind o gustare perfectă pentru imunitate.",
-    price: 10,
-    stock: 15,
+    price: 6,
+    stock: 150,
     image:
-      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\mandarine.jpg",
+      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsmandarine.jpg",
     sku: "SK008",
   },
   {
@@ -94,9 +94,9 @@ const products = [
     description:
       " Portocalele sunt fructe citrice mari și suculente, cunoscute pentru gustul lor dulce și acidulat. Sunt o sursă excelentă de vitamina C și fibre.",
     price: 10,
-    stock: 15,
+    stock: 200,
     image:
-      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\portocale.jpg",
+      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsportocale.jpg",
     sku: "SK009",
   },
   {
@@ -104,10 +104,10 @@ const products = [
     name: "Lime",
     description:
       "Lime-ul este un fruct citric mic, verde, cu un gust acrișor intens. Este folosit frecvent pentru a da aromă alimentelor și băuturilor, fiind bogat în vitamina C.",
-    price: 10,
-    stock: 15,
+    price: 3,
+    stock: 300,
     image:
-      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\lime.jpg",
+      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetslime.jpg",
     sku: "SK0010",
   },
   {
@@ -115,10 +115,10 @@ const products = [
     name: "Mango",
     description:
       "Mango-ul este un fruct tropical cu pulpă galben-portocalie, dulce și suculentă. Este bogat în vitaminele A și C, fibre și antioxidanți.",
-    price: 10,
-    stock: 15,
+    price: 30,
+    stock: 150,
     image:
-      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\mango.jpg",
+      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsmango.jpg",
     sku: "SK0011",
   },
   {
@@ -126,10 +126,10 @@ const products = [
     name: "Ananas",
     description:
       "Ananasul este un fruct tropical mare, cu o coajă aspră și pulpă dulce-acrișoară. Este o sursă excelentă de vitamina C, mangan și bromelaină, o enzimă benefică pentru digestie.",
-    price: 10,
-    stock: 15,
+    price: 28,
+    stock: 100,
     image:
-      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\ananas.jpg",
+      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsananas.jpg",
     sku: "SK0012",
   },
 ];
@@ -146,14 +146,20 @@ function renderProducts() {
                   <div class="card-body">
                       <h5 class="card-title">${product.name}</h5>
                       <p class="card-text">$${product.price}</p>
-                      <button class="btn btn-primary add-to-cart" data-id="${product.id}">Add to Cart</button>
+                      <button class="btn btn-primary btn-sm add-to-cart" data-id="${product.id}">Add to Cart</button>
+                      <button class="btn btn-secondary add-to-favorites btn-sm" data-id="${product.id}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/
+</svg>></i>
+</button>
                   </div>
               </div>
           </div>
       `
     )
     .join("");
-
+//TODO de reparat aici functia 
+    //Functie pentru adaugarea cantitatii disponibile in stoc//
+  
   // selectez toate elementele cu clasa "add-to-card"
   document
     .querySelectorAll(".add-to-cart")
@@ -246,6 +252,21 @@ function updateCartCount() {
 //   alert("Your cart is empty!");
 //   return;
 // }
+
+
+//Functie de scroll de la my cart pana la checkout button
+document.querySelectorAll('.icon-link').forEach(anchor => {
+  anchor.addEventListener('click', function(event){
+    event.preventDefault(); // Previne comportamentul implicit al link-ului
+    //selectez elementul catre care vreau sa faca scroll
+    const checkoutBtn = document.getElementById('checkout-btn');
+
+    checkoutBtn.scrollIntoView({ behavior: 'smooth' }); 
+   });
+});
+
+
+//Functie de checkout//
 function checkout() {
   if (cart.length === 0) {
     alert("Your cart is empty");
