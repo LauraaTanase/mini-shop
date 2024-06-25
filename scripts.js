@@ -1,4 +1,5 @@
 const products = [
+  //Todo:sa modific preturile,stocurile si ce a mai ramas la produsele mele.//
   {
     id: 1,
     name: "Banane",
@@ -18,7 +19,7 @@ const products = [
     price: 10,
     stock: 15,
     image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsmere.jpg",
+      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\mere.jpg",
     sku: "SK002",
   },
   {
@@ -29,7 +30,7 @@ const products = [
     price: 10,
     stock: 15,
     image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetspere.jpg",
+      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\pere.jpg",
     sku: "SK003",
   },
   {
@@ -40,7 +41,7 @@ const products = [
     price: 10,
     stock: 15,
     image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassets\fructulDragonului",
+      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\fructulDragonului.jpg",
     sku: "SK004",
   },
   {
@@ -51,7 +52,7 @@ const products = [
     price: 10,
     stock: 15,
     image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetspiersici.jpg",
+      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\piersici.jpg",
     sku: "SK005",
   },
   {
@@ -62,7 +63,7 @@ const products = [
     price: 10,
     stock: 15,
     image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsstruguri.jpg",
+      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\struguri.jpg",
     sku: "SK006",
   },
   {
@@ -73,7 +74,7 @@ const products = [
     price: 10,
     stock: 15,
     image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassets\nectarine.jpg",
+      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\nectarine.jpg",
     sku: "SK007",
   },
   {
@@ -84,7 +85,7 @@ const products = [
     price: 10,
     stock: 15,
     image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsmandarine.jpg",
+      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\mandarine.jpg",
     sku: "SK008",
   },
   {
@@ -95,7 +96,7 @@ const products = [
     price: 10,
     stock: 15,
     image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsportocale.jpg",
+      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\portocale.jpg",
     sku: "SK009",
   },
   {
@@ -106,7 +107,7 @@ const products = [
     price: 10,
     stock: 15,
     image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetslime.jpg",
+      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\lime.jpg",
     sku: "SK0010",
   },
   {
@@ -117,7 +118,7 @@ const products = [
     price: 10,
     stock: 15,
     image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsmango.jpg",
+      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\mango.jpg",
     sku: "SK0011",
   },
   {
@@ -128,7 +129,7 @@ const products = [
     price: 10,
     stock: 15,
     image:
-      "C:UserszarafOneDriveDesktopIT SCHOOL WEB DEVELOPMENTVSCmini-shopassetsananas.jpg",
+      "C:\Users\zaraf\OneDrive\Desktop\IT SCHOOL WEB DEVELOPMENT\VSC\mini-shop\assets\ananas.jpg",
     sku: "SK0012",
   },
 ];
