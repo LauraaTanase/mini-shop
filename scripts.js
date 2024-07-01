@@ -1,5 +1,4 @@
 const products = [
-  //Todo:sa modific preturile,stocurile si ce a mai ramas la produsele mele.//
   {
     id: 1,
     name: "Banane",
@@ -125,7 +124,7 @@ function renderProducts() {
                       <button class="btn btn-primary btn-sm add-to-cart" data-id="${product.id}">Add to Cart</button>
                       <button class="btn btn-secondary add-to-favorites btn-sm" data-id="${product.id}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
   <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/
-</svg>></i>
+</svg></i>
 </button>
 
                   </div>
@@ -134,9 +133,6 @@ function renderProducts() {
       `
     )
     .join("");
-  //TODO de reparat aici functia
-  //Functie pentru adaugarea cantitatii disponibile in stoc//
-
   // selectez toate elementele cu clasa "add-to-card"
   document
     .querySelectorAll(".add-to-cart")
@@ -147,36 +143,37 @@ function renderProducts() {
         // ma uit in attribute - acolo am pus id-ul produsului ca informatie
         // si preiau cu getAttribute acea valoare
         const productId = parseInt(event.target.getAttribute("data-id"));
-
         // o pasez functiei addToCart ca parametru
         addToCart(productId);
       });
     });
 }
 
-//TODO creez functia de increase/decrease
 function addToCart(productId) {
-  const product = product.find((p) => p.id === productId);
-  const cartItem = cart.find((item) => item.id === productId);
-
-  if (cartItem) {
-    cartItem.quantity += 1;
+  const product = products.find((p) => p.id === productId);
+  if (product.stock > 0) {
+    const cartItem = cart.find((item) => item.id === productId);
+    if (cartItem) {
+      cartItem.quantity += 1;
+    } else {
+      cart.push({
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        quantity: 1,
+      });
+    }
+    product.stock -= 1;
+    updateCartCount();
+    renderCart();
   } else {
-    cart.push({
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      quantity: 1,
-    });
+    alert("Stoc epuizat");
   }
-  updateCartCount();
-  renderCart();
 }
 
 function renderCart() {
   // cart-list fiind un element in index.html
   const cartList = document.getElementById("cart-list");
-
   // ii dictez ce sa contina
   cartList.innerHTML =
     // folosind cart object, iterand prin el cu map
@@ -198,17 +195,14 @@ function renderCart() {
       // sa devina un string, stringul fiind cel asteptat in .innerHTML (ceva de genul: "<li>test</li><li>test</li><li>test</li>")
       .join("");
 
-  //  TODO: implementeaza ce sa faca remove from cart
+  //Remove from cart
   document.querySelectorAll(".remove-from-cart").forEach((button) => {
     button.addEventListener("click", (event) => {
-      // Obținem id-ul produsului din atributul data-id al butonului
       const productId = parseInt(event.target.getAttribute("data-id"));
-
-      // Apelăm funcția removeFromCart cu productId pentru a elimina produsul din coș
       removeFromCart(productId);
     });
   });
-
+  //Increase/decrease/upodate qty
   document.querySelectorAll(".increase-quantity").forEach((button) => {
     button.addEventListener("click", (event) => {
       const productId = parseInt(event.target.getAttribute("data-id"));
@@ -222,122 +216,50 @@ function renderCart() {
       updateQuantity(productId, -1);
     });
   });
-
-  document.querySelectorAll(".remove-from-cart").forEach((button) => {
-    button.addEventListener("click", (event) => {
-      const productId = parseInt(event.target.getAttribute("data-id"));
-      removeFromCart(productId);
-    });
-  });
 }
 
-function increaseQuantity(productId) {
+function updateQuantity(productId, change) {
   const cartItem = cart.find((item) => item.id === productId);
   if (cartItem) {
-    cartItem.quantity += 1;
+    cartItem.quantity += change;
+    if (cartItem.quantity <= 0) {
+      removeFromCart(productId);
+    } else {
+      const product = products.find((p) => p.id === productId);
+      product.stock -= change;
+      renderCart();
+    }
   }
+  // Actualizăm afișarea numărului de produse în coș
   updateCartCount();
-  renderCart();
 }
-function decreaseQuantity(productId) {
+
+function removeFromCart(productId) {
   const cartItem = cart.find((item) => item.id === productId);
-  if (cartItem && cartItem.quantity > 1) {
-    cartItem.quantity -= 1;
-  } else {
-    removeFromCart(productId);
+  if (cartItem) {
+    const product = products.find((p) => p.id === productId);
+    product.stock += cartItem.quantity;
+    cart = cart.filter((item) => item.id !== productId);
+    updateCartCount();
+    renderCart();
   }
-  updateCartCount();
-  renderCart();
 }
+
 function updateCartCount() {
   const cartCountElement = document.getElementById("cart-count");
   const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
   cartCountElement.textContent = totalItems;
 }
 
-function addToCart(productId) {
-  const product = products.find((p) => p.id === productId);
-  const cartItem = cart.find((item) => item.id === productId);
-
-  if (cartItem) {
-    cartItem.quantity += 1;
-  } else {
-    cart.push;
-  }
-
-  // TODO: "impinge" produsul in lista de cart
-  // asta trebuie sa faci tu :)
-  cart.push({
-    id: product.id,
-    name: product.name,
-    price: product.price,
-    quantity: 1,
-  });
-
-  // Actualizăm afișarea numărului de produse în coș
-  updateCartCount();
-
-  // ca sa afisez actualizat - practic fac override la ce am deja in innerHTML
-  renderCart();
-}
-
-function updateQuantity(productId, change) {
-  const cartItem = cart.find((item) => item.id === productId);
-
-  if (cartItem) {
-    cartItem.quantity += change;
-    if (cartItem.quantity <= 0) {
-      removeFromCart(productId);
-    } else {
-      renderCart();
-    }
-  }
-  updateCartCount();
-}
-
-function removeFromCart(productId) {
-  // filtreaza-mi tot ce e diferit ce input "productId"
-  // obtin un array fara ce am pasat in input
-  cart = cart.filter((item) => item.id !== productId);
-
-  // Actualizăm afișarea numărului de produse în coș
-  updateCartCount();
-
-  // update la datele afisate
-  renderCart();
-}
-
-// TODO: conditioneaza un alert message daca nu ai continut
-// HINT:
-// if (
-//   // cartul nu are continut
-// ) {
-//   alert("Your cart is empty!");
-//   return;
-// }
-
-//Functie de checkout//
 function checkout() {
   if (cart.length === 0) {
     alert("Your cart is empty");
     return;
   }
 
-  // TODO: calculeaza totalul cartului
-
-  const total = cart.reduce(
-    (acc, item) => acc + item.price * item.quantity, 0
-  );
-
-  // afiseaza mesajul
+  const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
   alert(`Your total is $${total}. Thank you for your purchase!`);
-
-  // acum ca a dat checkout si "a cumparat"
-  // golim cartul pentru alte cumparaturi :)
-
-  cart = []; // Clear the cart
-
-  // si facem iar update
+  cart = [];
   renderCart();
   updateCartCount();
 }
@@ -346,13 +268,10 @@ document.getElementById("checkout-btn").addEventListener("click", checkout);
 
 renderProducts();
 
-//Functie de scroll de la my cart pana la checkout button
 document.querySelectorAll(".icon-link").forEach((anchor) => {
   anchor.addEventListener("click", function (event) {
-    event.preventDefault(); // Previne comportamentul implicit al link-ului
-    //selectez elementul catre care vreau sa faca scroll
+    event.preventDefault();
     const checkoutBtn = document.getElementById("checkout-btn");
-
     checkoutBtn.scrollIntoView({ behavior: "smooth" });
   });
 });
